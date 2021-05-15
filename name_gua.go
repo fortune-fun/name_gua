@@ -4,6 +4,16 @@ import (
 	"github.com/godcong/yi"
 )
 
+type GuaType = int
+
+const (
+	DefaultBaGua GuaType = iota
+	Ss1BaGua
+	Ss2BaGua
+	M1BaGua
+	M2BaGua
+)
+
 // 周易八卦
 // 姓总数取上卦，名总数取下卦，姓名总数取动爻
 func (guaSanCai *GuaSanCai) BaGuaS1() *yi.Yi {
